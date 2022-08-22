@@ -10,7 +10,7 @@ app.get('/', (req,res)=>{
 })
 
 // Mongodb stuff
-
+// console.log(process.env.MONGO_URL)
 mongoose.connect(process.env.MONGO_URL, {useNewUrlParser:true})
 .then(()=>{
     console.log('Connected to mongodb atlas')
